@@ -1,6 +1,7 @@
 #include "SceneGameOver.h"
 
 
+//初期化
 void SceneGameOver::Init() {
 
 	fin = false;
@@ -12,14 +13,18 @@ void SceneGameOver::Init() {
 }
 
 
+//通常処理
 void SceneGameOver::Step() {
 
+	//押されたらシーン遷移開始
 	if (Input::PushMouse(MOUSE_LEFT) || PadInput::Push(XINPUT_BUTTON_A)) {
 		
 		change = true;
 	}
 }
 
+
+//描画処理
 void SceneGameOver::Draw() {
 
 	if (!PadInput::connectPad) {
@@ -40,6 +45,8 @@ void SceneGameOver::Draw() {
 	}
 }
 
+
+//破棄処理
 void SceneGameOver::Delete() {
 
 	fin = true;

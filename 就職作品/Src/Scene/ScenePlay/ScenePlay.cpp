@@ -1,8 +1,6 @@
 #include "ScenePlay.h"
 
 
-int GameTime;
-
 
 //プレイシーン初期化
 void ScenePlay::Init() {
@@ -42,7 +40,7 @@ void ScenePlay::Init() {
 
 	sceneStateCount = 0;
 	pause = false;
-	GameTime = (int)NORMAL_TIME;
+	GameData::GetInstance()->SetGameTime(NORMAL_TIME);
 	fin = false;
 }
 
@@ -156,7 +154,7 @@ void ScenePlay::Step() {
 		if (Input::PushMouse(MOUSE_LEFT)|| PadInput::Push(XINPUT_BUTTON_A)) {
 			fade = true;
 		}
-		GameTime = (int)NORMAL_TIME;
+		GameData::GetInstance()->SetGameTime(NORMAL_TIME);
 	}
 
 	//ゲームオーバー処理

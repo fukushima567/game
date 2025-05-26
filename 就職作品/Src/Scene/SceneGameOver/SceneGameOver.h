@@ -8,8 +8,15 @@ private:
 
 public:
 	
+	//‰Šú‰»
 	void Init();
+
+	//’Êíˆ—
 	void Step();
+
+	//•`‰æˆ—
 	void Draw();
+
+	//”jŠüˆ—
 	void Delete();
 };

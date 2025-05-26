@@ -13,15 +13,16 @@ void SceneSelect::Init() {
 	
 	LoadDivGraph("Data/Image/Select/stage.png", STAGE_NUM,1, STAGE_NUM,500,100, stageBoxHandle);
 	
-	BackGroundHandle= LoadGraph("Data/Image/Select/selectBackGround.png");
-	BackGroundPos[0] = 0;
-	BackGroundPos[1] = -SCREEN_SIZE_Y;
+	backGroundHandle[0] = LoadGraph("Data/Image/Select/selectBackGround.png");
+	backGroundHandle[1]= LoadGraph("Data/Image/Select/Box.png");
+	backGroundPos[0] = 0;
+	backGroundPos[1] = -SCREEN_SIZE_Y;
 
-	stageScreenHandle[0] = LoadGraph("Data/Image/Select/st0_screen.png");
-	stageScreenHandle[1] = LoadGraph("Data/Image/Select/st1_screen.png");
-	stageScreenHandle[2] = LoadGraph("Data/Image/Select/st2_screen.png");
-	stageScreenHandle[3] = LoadGraph("Data/Image/Select/st3_screen.png");
-	stageScreenHandle[4] = LoadGraph("Data/Image/Select/st4_screen.png");
+	stageScreenHandle[STAGE_0] = LoadGraph("Data/Image/Select/st0_screen.png");
+	stageScreenHandle[STAGE_1] = LoadGraph("Data/Image/Select/st1_screen.png");
+	stageScreenHandle[STAGE_2] = LoadGraph("Data/Image/Select/st2_screen.png");
+	stageScreenHandle[STAGE_3] = LoadGraph("Data/Image/Select/st3_screen.png");
+	stageScreenHandle[STAGE_4] = LoadGraph("Data/Image/Select/st4_screen.png");
 
 	for (int index = 0; index < STAGE_NUM; index++) {
 
@@ -51,12 +52,13 @@ void SceneSelect::Step() {
 
 	//背景のスクロール
 	for (int index = 0;index < 2;index++) {
-		BackGroundPos[index] += 2;
-		if (BackGroundPos[index] >= SCREEN_SIZE_Y) {
-			BackGroundPos[index] = -SCREEN_SIZE_Y;
+		backGroundPos[index] += 2;
+		if (backGroundPos[index] >= SCREEN_SIZE_Y) {
+			backGroundPos[index] = -SCREEN_SIZE_Y;
 		}
 	}
 
+	//エスケープキーかスタートボタンでタイトルへ戻る
 	if (Input::Push(KEY_INPUT_ESCAPE) || PadInput::Push(XINPUT_BUTTON_START)) {
 		Delete();
 		GameData::GetInstance()->SetSceneID(TITLE);
@@ -98,6 +100,7 @@ void SceneSelect::Step() {
 			}
 		}	
 	}
+
 	if (!select) {
 		selectIndex = -1;
 	}
@@ -108,7 +111,7 @@ void SceneSelect::Step() {
 void SceneSelect::Draw() {
 
 	for (int index = 0;index < 2;index++) {
-		DrawGraph(0, BackGroundPos[index], BackGroundHandle, true);
+		DrawGraph(0, backGroundPos[index], backGroundHandle[0], true);
 	}
 	
 	DrawBox((int)stageScreenPos.x, (int)stageScreenPos.y, (int)(stageScreenPos.x+ stageScreenSize.x), (int)(stageScreenPos.y + stageScreenSize.z), GetColor(255, 255, 255), true);
@@ -121,8 +124,12 @@ void SceneSelect::Draw() {
 	for (int index = 0; index < STAGE_NUM; index++) {
 		DrawRotaGraph((int)stageBoxPos[index].x, (int)stageBoxPos[index].y, stageBoxScale[index], 0.0, stageBoxHandle[index], true);
 	}
-	cursor.Draw();
 
+
+	DrawGraph((int)stageScreenPos.x, (int)stageScreenPos.y,backGroundHandle[1],true);
+
+
+	cursor.Draw();
 
 
 	if (!change) {
@@ -143,7 +150,8 @@ void SceneSelect::Delete() {
 		DeleteGraph(stageBoxHandle[index]);
 		DeleteGraph(stageScreenHandle[index]);
 	}
-	DeleteGraph(BackGroundHandle);
+	DeleteGraph(backGroundHandle[0]);
+	DeleteGraph(backGroundHandle[1]);
 	cursor.Delete();
 	fin = true;
 }
