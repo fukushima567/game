@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a079bf45-2464-4eb4-9922-be269ba39588}</ProjectGuid>
+    <RootNamespace>game</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(projectDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;$(projectDir)src\effekseer\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(projectDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;$(projectDir)src\effekseer</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(projectDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;$(projectDir)src\effekseer\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(projectDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;$(projectDir)src\effekseer</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(projectDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;$(projectDir)src\effekseer\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(projectDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;$(projectDir)src\effekseer</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(projectDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;$(projectDir)src\effekseer\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(projectDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;$(projectDir)src\effekseer</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Camera\playerCamera.cpp" />
+    <ClCompile Include="Src\Camera\clearCamera.cpp" />
+    <ClCompile Include="Src\Camera\startCamera.cpp" />
+    <ClCompile Include="Src\Camera\cameraManager.cpp" />
+    <ClCompile Include="Src\Character\character.cpp" />
+    <ClCompile Include="Src\Collision\Collision.cpp" />
+    <ClCompile Include="Src\Collision\SceneCollision.cpp" />
+    <ClCompile Include="Src\Cursor\cursor.cpp" />
+    <ClCompile Include="Src\debug\debug.cpp" />
+    <ClCompile Include="Src\Enemy\boss.cpp" />
+    <ClCompile Include="Src\Enemy\enemy.cpp" />
+    <ClCompile Include="Src\Enemy\enemy01.cpp" />
+    <ClCompile Include="Src\Enemy\enemy02.cpp" />
+    <ClCompile Include="Src\Enemy\enemy04.cpp" />
+    <ClCompile Include="Src\Enemy\enemy03.cpp" />
+    <ClCompile Include="Src\Enemy\enemyManager.cpp" />
+    <ClCompile Include="Src\FrameRate\FrameRate.cpp" />
+    <ClCompile Include="Src\GameData\gameData.cpp" />
+    <ClCompile Include="Src\Input\input.cpp" />
+    <ClCompile Include="Src\Input\PadInput.cpp" />
+    <ClCompile Include="Src\lib\effekseer.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="Src\MyLib\myLib.cpp" />
+    <ClCompile Include="Src\Player\player.cpp" />
+    <ClCompile Include="Src\Scene\SceneGameOver\SceneGameOver.cpp" />
+    <ClCompile Include="Src\Scene\SceneManager.cpp" />
+    <ClCompile Include="Src\Scene\ScenePlay\ScenePlay.cpp" />
+    <ClCompile Include="Src\Scene\SceneSelect\SceneSelect.cpp" />
+    <ClCompile Include="Src\Scene\SceneTest\SceneTest.cpp" />
+    <ClCompile Include="Src\Scene\SceneTitle\SceneTitle.cpp" />
+    <ClCompile Include="Src\ScreenEffect\ScreenEffect.cpp" />
+    <ClCompile Include="Src\Sound\sound.cpp" />
+    <ClCompile Include="Src\StageObject\Gauge.cpp" />
+    <ClCompile Include="Src\StageObject\stage.cpp" />
+    <ClCompile Include="Src\UI\keyUI.cpp" />
+    <ClCompile Include="Src\UI\playUI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\Camera\playerCamera.h" />
+    <ClInclude Include="Src\Camera\clearCamera.h" />
+    <ClInclude Include="Src\Camera\startCamera.h" />
+    <ClInclude Include="Src\Camera\cameraManager.h" />
+    <ClInclude Include="Src\Character\character.h" />
+    <ClInclude Include="Src\Collision\Collision.h" />
+    <ClInclude Include="Src\Collision\SceneCollision.h" />
+    <ClInclude Include="Src\Common.h" />
+    <ClInclude Include="Src\Cursor\cursor.h" />
+    <ClInclude Include="Src\debug\debug.h" />
+    <ClInclude Include="Src\Enemy\boss.h" />
+    <ClInclude Include="Src\Enemy\enemy.h" />
+    <ClInclude Include="Src\Enemy\enemy01.h" />
+    <ClInclude Include="Src\Enemy\enemy02.h" />
+    <ClInclude Include="Src\Enemy\enemy04.h" />
+    <ClInclude Include="Src\Enemy\enemy03.h" />
+    <ClInclude Include="Src\Enemy\enemyManager.h" />
+    <ClInclude Include="Src\FrameRate\FrameRate.h" />
+    <ClInclude Include="Src\GameData\gameData.h" />
+    <ClInclude Include="Src\Input\input.h" />
+    <ClInclude Include="Src\Input\PadInput.h" />
+    <ClInclude Include="Src\lib\effekseer.h" />
+    <ClInclude Include="Src\MyLib\myLib.h" />
+    <ClInclude Include="Src\Player\player.h" />
+    <ClInclude Include="Src\Scene\SceneBase\SceneBase.h" />
+    <ClInclude Include="Src\Scene\SceneGameOver\SceneGameOver.h" />
+    <ClInclude Include="Src\Scene\SceneManager.h" />
+    <ClInclude Include="Src\Scene\ScenePlay\ScenePlay.h" />
+    <ClInclude Include="Src\Scene\SceneSelect\SceneSelect.h" />
+    <ClInclude Include="Src\Scene\SceneTest\SceneTest.h" />
+    <ClInclude Include="Src\Scene\SceneTitle\SceneTitle.h" />
+    <ClInclude Include="Src\ScreenEffect\ScreenEffect.h" />
+    <ClInclude Include="Src\Sound\sound.h" />
+    <ClInclude Include="Src\StageObject\Gauge.h" />
+    <ClInclude Include="Src\StageObject\stage.h" />
+    <ClInclude Include="Src\UI\KeyUI.h" />
+    <ClInclude Include="Src\UI\playUI.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

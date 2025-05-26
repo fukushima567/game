@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="Src\Scene\ScenePlay\ScenePlay.cpp">
+      <Filter>Scene\ScenePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\SceneManager.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\SceneTitle\SceneTitle.cpp">
+      <Filter>Scene\SceneTitle</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\SceneSelect\SceneSelect.cpp">
+      <Filter>Scene\SceneSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\SceneGameOver\SceneGameOver.cpp">
+      <Filter>Scene\SceneGameOver</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\SceneTest\SceneTest.cpp">
+      <Filter>Scene\SceneTest</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Sound\sound.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\lib\effekseer.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Input\input.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Collision\Collision.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\FrameRate\FrameRate.cpp">
+      <Filter>FrameRate</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Input\PadInput.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Player\player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Camera\playerCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Camera\cameraManager.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Enemy\enemy01.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Enemy\enemyManager.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Collision\SceneCollision.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\StageObject\Gauge.cpp">
+      <Filter>StageObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\StageObject\stage.cpp">
+      <Filter>StageObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\UI\playUI.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ScreenEffect\ScreenEffect.cpp">
+      <Filter>ScreenEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Cursor\cursor.cpp">
+      <Filter>Cursor</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Enemy\enemy04.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Enemy\enemy03.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Enemy\boss.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Character\character.cpp">
+      <Filter>Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\debug\debug.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Camera\clearCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Camera\startCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\MyLib\myLib.cpp">
+      <Filter>MyLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Enemy\enemy02.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\UI\keyUI.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Enemy\enemy.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\GameData\gameData.cpp">
+      <Filter>GameData</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\Common.h" />
+    <ClInclude Include="Src\Scene\SceneBase\SceneBase.h">
+      <Filter>Scene\SceneBase</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\ScenePlay\ScenePlay.h">
+      <Filter>Scene\ScenePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\SceneManager.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\SceneTitle\SceneTitle.h">
+      <Filter>Scene\SceneTitle</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\SceneSelect\SceneSelect.h">
+      <Filter>Scene\SceneSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\SceneGameOver\SceneGameOver.h">
+      <Filter>Scene\SceneGameOver</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\SceneTest\SceneTest.h">
+      <Filter>Scene\SceneTest</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Sound\sound.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\lib\effekseer.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Input\input.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Collision\Collision.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\FrameRate\FrameRate.h">
+      <Filter>FrameRate</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Input\PadInput.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Player\player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Camera\playerCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Camera\cameraManager.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Enemy\enemy01.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Enemy\enemy.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Enemy\enemyManager.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Collision\SceneCollision.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\StageObject\Gauge.h">
+      <Filter>StageObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\UI\playUI.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\StageObject\stage.h">
+      <Filter>StageObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\ScreenEffect\ScreenEffect.h">
+      <Filter>ScreenEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Cursor\cursor.h">
+      <Filter>Cursor</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Enemy\enemy04.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Enemy\enemy03.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Enemy\boss.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Character\character.h">
+      <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\debug\debug.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Camera\clearCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Camera\startCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\MyLib\myLib.h">
+      <Filter>MyLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Enemy\enemy02.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\UI\KeyUI.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\GameData\gameData.h">
+      <Filter>GameData</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{5c5d9585-1db7-4e7b-bf36-f8a89fcdf6aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\SceneBase">
+      <UniqueIdentifier>{aa58be30-00b0-4e80-bfbc-a6853d0d9d32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\ScenePlay">
+      <UniqueIdentifier>{36224062-bd06-4771-8806-980b5b7b023b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\SceneTitle">
+      <UniqueIdentifier>{41cbeefd-1a55-451c-85e0-cde41123f2f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\SceneSelect">
+      <UniqueIdentifier>{5d772265-740c-4361-9b07-e3c5efa4155e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\SceneGameOver">
+      <UniqueIdentifier>{b87ffb59-59cb-4b81-a061-e2a5c2fcc8a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\SceneTest">
+      <UniqueIdentifier>{32e6a83d-8668-4750-935b-6fcbcfa8addd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{fff9c86f-0e60-4693-89a5-d4dc05a500f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{6e803187-d9a8-407e-a5df-b5852b6a522a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{34e8f532-8eb7-4ca5-a8c5-2e0dde9603ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision">
+      <UniqueIdentifier>{7edeee90-86e7-4bea-a4ae-f353fa61e8ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FrameRate">
+      <UniqueIdentifier>{ca6a37f8-644c-40bf-836b-f1627c086594}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{2c1e7262-e357-41d7-8b55-cac76c64fdb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{e50bb836-264a-46d6-bc18-7ff87b317f12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enemy">
+      <UniqueIdentifier>{2abf0aaa-1fe5-42a7-b132-b59c685e163c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StageObject">
+      <UniqueIdentifier>{80e9a135-71af-4209-804e-06ab9ed8d849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{6c23dff3-5725-45f8-ab09-b27ffe03ca3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScreenEffect">
+      <UniqueIdentifier>{159ccede-5060-48cc-9b21-fecb002bf2cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cursor">
+      <UniqueIdentifier>{51cd5965-6ec6-4d1a-80fe-edaa9a03337b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{3a2593c4-6523-4cf1-895d-40f4ff56cebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character">
+      <UniqueIdentifier>{99a9a250-f72e-4be6-b257-0bafd4ba6b4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLib">
+      <UniqueIdentifier>{27fd007f-1f78-4b51-b05f-87d9374f83a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameData">
+      <UniqueIdentifier>{ba6eb977-6563-4a1e-a9b5-27c1fb1bd782}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
