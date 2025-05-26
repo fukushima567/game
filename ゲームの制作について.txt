@@ -1,0 +1,16 @@
+使用したもの
+ＤＸライブラリ
+Effekseer
+
+
+授業で配布、参考に制作されたもの
+Src/lib/effekseer.cpp
+Src/lib/effekseer.h
+
+Src/FrameRate/FrameRate.cpp
+Src/FrameRate/FrameRate.h
+
+Src/debug/debug.cpp
+Src/debug/debug.h
+
+Src/effekseer
